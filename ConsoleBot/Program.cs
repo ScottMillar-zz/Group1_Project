@@ -23,7 +23,7 @@ namespace ConsoleBot
             //Accept user input to manipulate the AI
             myBot.isAcceptingUserInput = true;
 
-            Console.WriteLine("-------------------------Kieran's Chatbot!-------------------------");
+            Console.WriteLine("-------------------------Mentalist Machine!-------------------------");
             //While the bot is accepting user input
             while (true)
             {
