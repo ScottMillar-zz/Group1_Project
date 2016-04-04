@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- Free software &copy; 2001-2003 ALICE A.I. Foundation. -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.01 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Annotated Version updated September 2003 -->
+<category>
+	<pattern>12345</pattern>
+	<template>
+		<random>
+			<li>Sorry, I forgot to ask your name</li>
+			<li>What's your name again?</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>My name is *</pattern>
+	<template>
+		Hello <set name="username"> <star/>! </set>
+	</template>
+</category>
+
+<category>
+	<pattern>What is my name?</pattern>
+		<template>
+			Your name is <get name="username"/>!
+		</template>
+</category>
+
+</aiml>
