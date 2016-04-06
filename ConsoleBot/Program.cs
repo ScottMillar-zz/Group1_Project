@@ -51,12 +51,11 @@ namespace ConsoleBot
                     input += " " + spelling.Correct(item);
                 }
                 Console.WriteLine(input);
-
                 string output;
                 
                 //If the user enters 'quit', the loop breaks out and exits the program.
                 //Otherwise continue with AI manipulation
-                if (input.ToLower() == "quit")
+                if (input.ToLower() == " quit")
                 {
                     break;
                 }
@@ -88,6 +87,7 @@ namespace ConsoleBot
             Console.SetCursorPosition(0, currentLineCursor);
         }
 
+        //Reference: https://msdn.microsoft.com/en-us/library/system.text.regularexpressions.regex(v=vs.110).aspx
         public static string removePunctuation(string input)
         {
             input = Regex.Replace(input, @"[^\w]", string.Empty);

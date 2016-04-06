@@ -72,8 +72,22 @@
 		</template>
 	</category>
 	
-	<category>
+		<category>
+		<pattern>Hello *</pattern>
+		<template>
+			<srai>HELLO</srai>
+		</template>
+	</category>
+	
+			<category>
 		<pattern>Yo</pattern>
+		<template>
+			<srai>HELLO</srai>
+		</template>
+	</category>
+	
+				<category>
+		<pattern>ayy *</pattern>
 		<template>
 			<srai>HELLO</srai>
 		</template>

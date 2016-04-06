@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+	<pattern>Done</pattern>
+	<template><srai>FINISHED</srai></template>
+</category>
+
+<category>
+	<pattern>Finished</pattern>
+	<template><srai>FINISHED</srai></template>
+</category>
+
+
+<category>
+	<pattern>* done it</pattern>
+	<template><srai>FINISHED</srai></template>
+</category>
+
+
+<category>
+	<pattern>Done it</pattern>
+	<template><srai>FINISHED</srai></template>
+</category>
+
+
+<category>
+	<pattern>completed</pattern>
+	<template><srai>FINISHED</srai></template>
+</category>
+
+<category>
+	<pattern>* done</pattern>
+	<template><srai>FINISHED</srai></template>
+</category>
+
+<category>
+	<pattern>* finished</pattern>
+	<template><srai>FINISHED</srai></template>
+</category>
+
+
+<category>
+	<pattern>completed</pattern>
+	<template><srai>FINISHED</srai></template>
+</category>
+
+
+<category>
+	<pattern>* completed</pattern>
+	<template><srai>FINISHED</srai></template>
+</category>
+
+
+<category>
+	<pattern>Ok!</pattern>
+	<template><srai>FINISHED</srai></template>
+</category>
+
+<category>
+	<pattern>FIN</pattern>
+	<template><srai>FINISHED</srai></template>
+</category>
+
+</aiml>
