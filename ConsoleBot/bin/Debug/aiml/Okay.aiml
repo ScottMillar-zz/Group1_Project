@@ -81,6 +81,11 @@
 	<template></template>
 </category>
 
+<category>
+	<pattern>Sure</pattern>
+	<template></template>
+</category>
+
 
 
 

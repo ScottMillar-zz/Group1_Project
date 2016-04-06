@@ -49,7 +49,7 @@
     </category>
     
     <category>
-        <pattern>I do</pattern>
+        <pattern>I do *</pattern>
         <template>
             <srai>YES</srai>
         </template>
@@ -117,37 +117,44 @@
     </category>
 
     <category>
-        <pattern>Yep</pattern>
+        <pattern>I do not *</pattern>
         <template>
-            <srai>YES</srai>
+            <srai>NO</srai>
         </template>
     </category>
     
     <category>
-        <pattern>Yep</pattern>
+        <pattern>I don't</pattern>
         <template>
-            <srai>YES</srai>
+            <srai>NO</srai>
         </template>
     </category>
     
     <category>
-        <pattern>Yep</pattern>
+        <pattern>nah</pattern>
         <template>
-            <srai>YES</srai>
+            <srai>NO</srai>
         </template>
     </category>
     
     <category>
-        <pattern>Yep</pattern>
+        <pattern>nope</pattern>
         <template>
-            <srai>YES</srai>
+            <srai>NO</srai>
         </template>
     </category>
     
     <category>
-        <pattern>Yep</pattern>
+        <pattern>_ sorry</pattern>
         <template>
-            <srai>YES</srai>
+            <srai>NO</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>sorry *</pattern>
+        <template>
+            <srai>NO</srai>
         </template>
     </category>
     

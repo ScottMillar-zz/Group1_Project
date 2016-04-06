@@ -60,6 +60,13 @@
 				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
 			</template>
 		</category>
+		
+		<category>
+			<pattern>_ is *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
 	
 	<!--</WaysTheyCanEnterName>-->
 
@@ -131,6 +138,13 @@
             <srai>YES</srai>
         </template>
     </category>
+	
+	<category>
+        <pattern>sure</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
     
 	<category>
 		<pattern>NO</pattern>
@@ -138,7 +152,42 @@
 			Okay, can you tell me why<think><set name="topic">notready</set></think>? 
 		</template>
 	</category>
+	
+	<category>
+        <pattern>nope</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>nah</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
 
+	<category>
+        <pattern>not yet</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>sorry _</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ sorry</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
+	
 </topic>
 
 <topic name="notready">
