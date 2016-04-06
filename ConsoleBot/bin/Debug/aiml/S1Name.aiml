@@ -68,6 +68,33 @@
 			</template>
 		</category>
 	
+		<category>
+			<pattern>it's *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>its *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>_ it's *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>_ its *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
 	<!--</WaysTheyCanEnterName>-->
 
 		

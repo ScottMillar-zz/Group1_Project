@@ -49,6 +49,7 @@ namespace ConsoleBot
                 {
                     input += " " + spelling.Correct(item);
                 }
+                Console.WriteLine(input);
                 string output;
                 
                 //If the user enters 'quit', the loop breaks out and exits the program.
