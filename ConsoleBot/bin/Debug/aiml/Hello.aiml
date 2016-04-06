@@ -71,6 +71,13 @@
 			<srai>HELLO</srai>
 		</template>
 	</category>
+	
+	<category>
+		<pattern>Yo</pattern>
+		<template>
+			<srai>HELLO</srai>
+		</template>
+	</category>
 
 <!--</WaysUserCanStartConversation>-->
 
