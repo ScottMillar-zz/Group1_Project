@@ -1,6 +1,7 @@
 alright
 am
 approved
+be
 correct
 decent
 do
@@ -42,11 +43,13 @@ sure
 sure
 there
 ye
+you
 yeah
 yep
 yes
 yet
 yo
+would
 quit
 
 Sophia

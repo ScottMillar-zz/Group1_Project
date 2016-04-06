@@ -41,8 +41,7 @@ namespace ConsoleBot
                 Console.Write("\n\nYou: ");
                 Console.ResetColor();
 
-                string userInput = Console.ReadLine();
-                
+                string userInput = Console.ReadLine();                
                 string input = "";
 
                 //checking the spelling of the userInput
@@ -50,7 +49,6 @@ namespace ConsoleBot
                 {
                     input += " " + spelling.Correct(item);
                 }
-                Console.WriteLine(input);
                 string output;
                 
                 //If the user enters 'quit', the loop breaks out and exits the program.
@@ -60,7 +58,7 @@ namespace ConsoleBot
                     break;
                 }
                 else
-                {                   
+                {
                     Request r = new Request(removePunctuation(input), myUser, myBot);
                     Result res = myBot.Chat(r);
 
@@ -90,8 +88,7 @@ namespace ConsoleBot
         //Reference: https://msdn.microsoft.com/en-us/library/system.text.regularexpressions.regex(v=vs.110).aspx
         public static string removePunctuation(string input)
         {
-            input = Regex.Replace(input, @"[^\w]", string.Empty);
-            input = Regex.Replace(input, @"[^\w_]", string.Empty);
+            input = Regex.Replace(input, @"[^\w\s]", string.Empty);
             return input;
         }
     }

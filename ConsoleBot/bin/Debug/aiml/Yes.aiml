@@ -32,6 +32,12 @@
 </category>
 
 <category>
+	<pattern>Indeed</pattern>
+	<template><srai>YES</srai></template>
+</category>
+
+
+<category>
 	<pattern>Indeed *</pattern>
 	<template><srai>YES</srai></template>
 </category>
