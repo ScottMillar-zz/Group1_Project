@@ -26,3 +26,24 @@ C:\Users\Computing\Desktop\ConsoleBot\ConsoleBot\bin\Debug\ConsoleBot.exe
 C:\Users\Computing\Desktop\ConsoleBot\ConsoleBot\bin\Debug\ConsoleBot.pdb
 C:\Users\Computing\Desktop\ConsoleBot\ConsoleBot\bin\Debug\AIMLbot.pdb
 C:\Users\Computing\Desktop\ConsoleBot\ConsoleBot\obj\Debug\ConsoleBot.csprojResolveAssemblyReference.cache
+C:\Users\Computing\Desktop\Group-1-Project-Rep-master\ConsoleBot\bin\Debug\ConsoleBot.exe.config
+C:\Users\Computing\Desktop\Group-1-Project-Rep-master\ConsoleBot\obj\Debug\ConsoleBot.exe
+C:\Users\Computing\Desktop\Group-1-Project-Rep-master\ConsoleBot\obj\Debug\ConsoleBot.pdb
+C:\Users\Computing\Desktop\Group-1-Project-Rep-master\ConsoleBot\bin\Debug\ConsoleBot.exe
+C:\Users\Computing\Desktop\Group-1-Project-Rep-master\ConsoleBot\bin\Debug\ConsoleBot.pdb
+C:\Users\Computing\Desktop\Group-1-Project-Rep-master\ConsoleBot\bin\Debug\AIMLbot.pdb
+C:\Users\Computing\Desktop\Group-1-Project-Rep-master\ConsoleBot\obj\Debug\ConsoleBot.csprojResolveAssemblyReference.cache
+X:\Group-1-Project-Rep-master 2\ConsoleBot\bin\Debug\ConsoleBot.exe.config
+X:\Group-1-Project-Rep-master 2\ConsoleBot\obj\Debug\ConsoleBot.exe
+X:\Group-1-Project-Rep-master 2\ConsoleBot\obj\Debug\ConsoleBot.pdb
+X:\Group-1-Project-Rep-master 2\ConsoleBot\bin\Debug\ConsoleBot.exe
+X:\Group-1-Project-Rep-master 2\ConsoleBot\bin\Debug\ConsoleBot.pdb
+X:\Group-1-Project-Rep-master 2\ConsoleBot\bin\Debug\AIMLbot.pdb
+X:\Group-1-Project-Rep-master 2\ConsoleBot\obj\Debug\ConsoleBot.csprojResolveAssemblyReference.cache
+\\Mac\UNI WORK\Group-1-Project-Rep-master 2\ConsoleBot\bin\Debug\ConsoleBot.exe.config
+\\Mac\UNI WORK\Group-1-Project-Rep-master 2\ConsoleBot\obj\Debug\ConsoleBot.exe
+\\Mac\UNI WORK\Group-1-Project-Rep-master 2\ConsoleBot\obj\Debug\ConsoleBot.pdb
+\\Mac\UNI WORK\Group-1-Project-Rep-master 2\ConsoleBot\bin\Debug\ConsoleBot.exe
+\\Mac\UNI WORK\Group-1-Project-Rep-master 2\ConsoleBot\bin\Debug\ConsoleBot.pdb
+\\Mac\UNI WORK\Group-1-Project-Rep-master 2\ConsoleBot\bin\Debug\AIMLbot.pdb
+\\Mac\UNI WORK\Group-1-Project-Rep-master 2\ConsoleBot\obj\Debug\ConsoleBot.csprojResolveAssemblyReference.cache

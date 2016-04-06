@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <aiml>
 <!-- Free software &copy; 2001-2003 ALICE A.I. Foundation. -->
 <!-- This program is open source code released under -->
@@ -38,6 +38,7 @@ They: <get name="they"/>,
 Thought: <get name="thought"/>,
 Want: <get name="want"/>,
 We: <get name="we"/>,
+Username: <get name="username"/>,
 
 
 </template>

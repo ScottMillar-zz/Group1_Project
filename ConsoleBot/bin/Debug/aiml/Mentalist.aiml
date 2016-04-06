@@ -7,28 +7,232 @@
 <!-- Complies with AIML 1.01 Tag Set Specification -->
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- Annotated Version updated September 2003 -->
-<category>
-	<pattern>12345</pattern>
-	<template>
-		<random>
-			<li>Sorry, I forgot to ask your name</li>
-			<li>What's your name again?</li>
-		</random>
-	</template>
-</category>
+<!---Stages of the conversation are seperated into "topics", which act to keep the conversation on the right path.-->
+<!---at critical points in each section, a new topic tag is assigned, moving the conversation along.-->
 
-<category>
-	<pattern>My name is *</pattern>
-	<template>
-		Hello <set name="username"> <star/>! </set>
-	</template>
-</category>
-
-<category>
-	<pattern>What is my name?</pattern>
+<topic name="mentalist">
+	<category>
+		<pattern>MENTALIST</pattern>
 		<template>
-			Your name is <get name="username"/>!
+		<random>
+		<li>It means I can read your mind. Probably. ;)</li>
+		<li>It just means I'm a mind reader, basically.<think><set name="topic">tasks</set></think></li>
+		<think><set name="topic">tasks</set></think>
+	</random>
+	</template>
+</category>
+</topic>
+
+
+
+<!---The first conversation topic is "name", and it asks the user their name & suggests to the user how the conversation will work.-->
+
+
+
+
+
+<!---introduction & explanation & asking name section-->
+
+
+<!---"tasks" section route 1-->
+
+<topic name="tasks">
+
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            <random>
+		        <li>Let an image <set name="topic">flow</set> into your mind</li>
+		        <li>I want you to consider a <set name="topic">number</set> between one and ten</li>
+	        </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>I do</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>I do indeed</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>You would be correct</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Thats right</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>That is correct</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Yeah</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Yep</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Correct</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NO</pattern>
+        <template>
+            <random>
+		        <li>Really? Are you sure?<think><set name="topic">PaperNotFound</set></think></li>
+		        <li>Are you sure?<think><set name="topic">PaperNotFound</set></think></li>
+		        <li>Are you positive?<think><set name="topic">PaperNotFound</set></think></li>
+		        <li>Really?<think><set name="topic">PaperNotFound</set></think></li>
+	        </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>Yep</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Yep</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Yep</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Yep</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Yep</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <category>
+	<pattern>DONE</pattern>
+	
+	<template>
+		Next to you, there should be a pen and paper <think><set name="topic">draw</set></think>
+	</template>
+</category>
+<category>
+	<pattern>OK</pattern>
+	
+	<template>
+	<random>
+		<li>Let an image <set name="topic">flow</set> into your mind</li>
+		<li>I want you to consider a <set name="topic">number</set> between one and ten</li>
+	</random>
+	</template>
+</category>
+
+</topic>
+
+<topic name="PaperNotFound">
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            <random>
+                <li></li>
+            </random>
+        </template>
+    </category>
+    
+    <li>Really? Are you sure?<think><set name="topic">PaperNotFound</set></think></li>
+		        <li>Are you sure?<think><set name="topic">PaperNotFound</set></think></li>
+		        <li>Are you positive?<think><set name="topic">PaperNotFound</set></think></li>
+		        <li>Really?<think><set name="topic">PaperNotFound</set></think></li>
+</topic>
+
+<!-- Route 1 Flow -->
+<topic name="flow">
+<category>
+	<pattern>FINISHED</pattern>
+		<template>
+		Your drawing is of...
 		</template>
 </category>
 
+<category>
+	<pattern>WHAT</pattern>
+	
+	<template>
+		Next to you, there should be a pen and paper <think><set name="topic">draw</set></think>
+	</template>
+</category>
+
+<category>
+	<pattern>YES</pattern>
+		<template>
+		Draw the image...
+		</template>
+</category>
+	
+<category>
+
+	<pattern>OK</pattern>
+	
+	<template>
+	<random>
+		<li>Tell me when you are done</li>
+		<li>Inform me when you are finished :)</li>
+		<li>Hurry up, I aint got all mothafuckin' day here</li>
+	</random>
+	</template>
+</category>
+
+
+</topic>
 </aiml>
+

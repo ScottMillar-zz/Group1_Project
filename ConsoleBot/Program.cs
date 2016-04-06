@@ -44,15 +44,15 @@ namespace ConsoleBot
                     Request r = new Request(input, myUser, myBot);
                     Result res = myBot.Chat(r);
                     Console.ForegroundColor = ConsoleColor.Red;
-                    //Thread.Sleep(200);
-                    Console.WriteLine("Bot is writing... ");
+                    //Thread.Sleep(500);
+                    Console.WriteLine("The Mentalist is writing... ");
 
                     output = res.Output;
                     //Thread.Sleep(output.Length * 125);
 
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
                     ClearCurrentConsoleLine();
-                    Console.Write("Bot: "); Console.ResetColor(); Console.Write(res.Output);
+                    Console.Write("Mentalist: "); Console.ResetColor(); Console.Write(res.Output);
                 }
             }
         }

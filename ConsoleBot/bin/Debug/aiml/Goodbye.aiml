@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+	<pattern>BOTBYE</pattern>
+	<template>
+		<random>
+			<li>Goodbye <get name="username"/>!</li>
+			<li>Bye <get name="username"/>!</li>
+			<li>Farewell <get name="username"/>!</li>
+			<li>Bye bye<get name="username"/>!</li>
+			<li>Later <get name="username"/>!</li>
+			<li>So long <get name="username"/>!</li>
+			<li>Take care <get name="username"/>!</li>
+			<li>All right then <get name="username"/>!</li>
+			<li>Catch you later <get name="username"/>!</li>
+			<li>Have a good day<get name="username"/>!</li>
+			<li>Ciao <get name="username"/>!</li>
+			<li>Au revoir <get name="username"/>!</li>
+		</random>
+	</template>
+</category>
+
+<category>
+	<pattern>Bye</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>Goodbye</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>Farewell</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>Later</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>Have a good day</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>Ciao</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>Au revoir</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>So long</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>Thanks for the conversation</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>It was a pleasure talking with you</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>Bye bye</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>Smell you later</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>Talk to you later</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+<category>
+	<pattern>Thanks for speaking with me</pattern>
+	<template><srai>BOTBYE</srai></template>
+</category>
+
+</aiml>

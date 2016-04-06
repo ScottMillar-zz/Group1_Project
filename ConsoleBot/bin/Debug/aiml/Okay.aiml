@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+	<pattern>Okay</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Ok</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Yes</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Affirmative</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Roger</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Okayed</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Roger that</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Alright</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Fine</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Decent</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Correct</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Approved</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Oki dokie</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Okie dokie</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Okie dokey</pattern>
+	<template></template>
+</category>
+
+<category>
+	<pattern>Oki dokey</pattern>
+	<template></template>
+</category>
+
+
+
+
+
+</aiml>
