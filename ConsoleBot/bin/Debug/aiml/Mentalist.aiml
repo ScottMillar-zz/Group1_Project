@@ -43,7 +43,7 @@
         <template>
             <random>
 		        <li>Let an image <set name="topic">flow</set> into your mind</li>
-		        <li>I want you to consider a <set name="topic">number</set> between one and ten</li>
+		        <li>I want you to think of a whole <set name="topic">number</set> between one and ten</li>
 	        </random>
         </template>
     </category>
@@ -92,6 +92,13 @@
     
     <category>
         <pattern>Yep</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I do</pattern>
         <template>
             <srai>YES</srai>
         </template>
@@ -186,12 +193,781 @@
 
 </topic>
 
+<topic name="number">
+	<category>
+		<pattern>OK</pattern>
+		<template>
+			<random>
+				<li>Have you considered a number?<think><set name="topic">ChosenNumber</set></think></li>
+				<li>Have you thought of a number?<think><set name="topic">ChosenNumber</set></think></li>
+			</random>
+		</template>
+	</category>
+	
+	<!--Ways that the user can respond to whether the user has thought of a number between one and ten-->
+	<category>
+        <pattern>I have</pattern>
+        <template>
+            <srai>OK</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I have *</pattern>
+        <template>
+            <srai>OK</srai>
+        </template>
+    </category>
+	
+	<category>
+		<pattern>Okay</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Affirmative</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Roger</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Okayed</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Roger that</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Alright</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Fine</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Decent</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Approved</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Oki dokie</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Okie dokie</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Okie dokey</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Oki dokey</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Sure</pattern>
+		<template>
+			<srai>OK</srai>
+		</template>
+	</category>
+</topic>
+
+<topic name="ChosenNumber">
+	<!--When the user has thought of a number this is there possible responses-->
+
+	<category>
+		<pattern>YES</pattern>
+		<template>
+			Great! Now multiply your number by 2!<think><set name="topic">NumberGameStage2</set></think>
+		</template>
+	</category>
+				 
+	<category>
+        <pattern>Okay</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Ok</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ I have *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I have *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>* I have</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I have</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Right</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Done</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Okay *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>One Sec</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Yup</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Ye</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+</topic>
+
+<topic name="NumberGameStage2">
+	<!--When the user has thought of a number this is there possible responses-->
+	<category>
+		<pattern>YES</pattern>
+		<template>
+			Okay! Now multiply your new number by 5!<think><set name="topic">NumberGameStage3</set></think>
+		</template>
+	</category>
+	
+	<category>
+        <pattern>Okay</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Ok</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ I have *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I have *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>* I have</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I have</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Right</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Done</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Okay *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>One Sec</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Yup</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Ye</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+
+</topic>
+
+<topic name="NumberGameStage3">
+	<!--When the user has thought of a number this is there possible responses-->
+	<category>
+		<pattern>YES</pattern>
+		<template>
+			Fantasitc! Now divide your new number by the first number that you had!<think><set name="topic">NumberGameStage4</set></think>
+		</template>
+	</category>
+	
+	<category>
+        <pattern>Okay</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Ok</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ I have *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I have *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>* I have</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I have</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Right</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Done</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Okay *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>One Sec</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Yup</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Ye</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+</topic>
+
+<topic name="NumberGameStage4">
+	<!--When the user has thought of a number this is there possible responses-->
+	<category>
+		<pattern>YES</pattern>
+		<template>
+			Okay! Now subtract 7 from your new number!<think><set name="topic">NumberGameStage5</set></think>
+		</template>
+	</category>
+	
+	<category>
+        <pattern>Okay</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Ok</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ I have *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I have *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>* I have</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I have</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Right</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Done</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Okay *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>One Sec</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Yup</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Ye</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+</topic>
+
+<topic name="NumberGameStage5">
+	<!--When the user has thought of a number this is there possible responses-->
+	<category>
+		<pattern>YES</pattern>
+		<template>
+			Okay... the number you should have is 3! Am I correct?<think><set name="topic">NumberGameStage6</set></think>
+		</template>
+	</category>
+	
+	<category>
+        <pattern>Okay</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Ok</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ I have *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I have *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>* I have</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I have</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Right</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Done</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Okay *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>One Sec</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Yup</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Ye</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+</topic>
+
+<topic name="NumberGameStage6">
+	<!--When the user has thought of a number this is their possible responses-->
+	
+	Okay... the number you should have is 3! Am I correct?
+	
+	<category>
+		<pattern>YES</pattern>
+		<template>
+			<random>
+				<li>I am clever aren't I? ;)<think><set name="topic">MentalClever</set></think></li>
+				<li>Good trick isn't it?<think><set name="topic">MentalClever</set></think></li>
+				<li>;)<think><set name="topic">MentalClever</set></think></li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+        <pattern>Wow</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>How is that possible</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Yes, how did you know that</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+
+	<category>
+        <pattern>How do you know that</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ amazing *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ amazing</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>	
+	
+	<category>
+        <pattern>amazing _</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+
+	<category>
+        <pattern>amazing</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+
+<category>
+        <pattern>How did you do that</pattern> <!-- needs a wink face responce ;) -->
+        <template>
+            ;)
+        </template>
+    </category>
+
+<category>
+        <pattern>_ Yeah</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+
+<category>
+        <pattern>Yeah _</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+
+<category>
+        <pattern>_ Yeah *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+
+<category>
+        <pattern>Cool</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+
+<category>
+        <pattern>_ Cool</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+
+<category>
+        <pattern>Cool _</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+
+<category>
+        <pattern>_ Cool *</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>	
+</topic>
+
+
+<topic name="MentalClever">
+	<!--When the user has thought of a number this is there possible responses-->
+	I am clever aren't I? ;)<think><set name="topic">MentalClever</set></think>
+	
+	<category>
+		<pattern>YES</pattern>
+		<template>
+			That's because I am a '<set name="topic">mentalist</set>!'
+		</template>
+	</category>
+	
+	<category>
+        <pattern>* modest</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>You are</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>You certainly are</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>You certainly are</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+</topic>
+
+
 <topic name="PaperNotFound">
     <category>
         <pattern>YES</pattern>
         <template>
             <random>
-                <li></li>
+                <li>Please could you ask a collegue of mine to get you some, I apologise about this!</li>
+				<li>I'm very sorry! Could you please ask a collegue of mine to get you some?</li>
             </random>
         </template>
     </category>

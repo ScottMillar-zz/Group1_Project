@@ -14,7 +14,7 @@
 			<li>Take care <get name="username"/>!</li>
 			<li>All right then <get name="username"/>!</li>
 			<li>Catch you later <get name="username"/>!</li>
-			<li>Have a good day<get name="username"/>!</li>
+			<li>Have a good day <get name="username"/>!</li>
 			<li>Ciao <get name="username"/>!</li>
 			<li>Au revoir <get name="username"/>!</li>
 		</random>

@@ -18,7 +18,7 @@
 			<li>Hi there! Do you have a <set name="topic">name</set>?</li>
 			<li>Hi! Could I ask you for your <set name="topic">name</set> please?</li>
 			<li>Hi! What's your <set name="topic">name</set>?</li>
-			<li>Hi! What <set name="topic">name</set> do people call you?</li>
+			<li>Hi! Do you have a <set name="topic">name</set>?</li>
 			<li>Hello! Could I ask you for your <set name="topic">name</set> please?</li>
 			<li>Hello! What's your <set name="topic">name</set>?</li>
 			<li>Hello! Do you have a <set name="topic">name</set>?</li>
@@ -67,27 +67,6 @@
 
 	<category>
 		<pattern>Howdy</pattern>
-		<template>
-			<srai>HELLO</srai>
-		</template>
-	</category>
-	
-		<category>
-		<pattern>Hello *</pattern>
-		<template>
-			<srai>HELLO</srai>
-		</template>
-	</category>
-	
-			<category>
-		<pattern>Yo</pattern>
-		<template>
-			<srai>HELLO</srai>
-		</template>
-	</category>
-	
-				<category>
-		<pattern>ayy *</pattern>
 		<template>
 			<srai>HELLO</srai>
 		</template>
