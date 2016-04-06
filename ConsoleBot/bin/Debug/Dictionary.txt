@@ -9,8 +9,10 @@ do
 Done
 dokey
 dokie
+exit
 fine
 go
+have
 Hello
 hey
 hi

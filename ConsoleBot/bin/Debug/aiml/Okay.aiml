@@ -124,6 +124,13 @@
 	<template><srai>OKAY</srai></template>
 </category>
 
+<category>
+    <pattern>I have *</pattern>
+    <template>
+        <srai>OK</srai>
+    </template>
+</category>
+
 
 
 </aiml>

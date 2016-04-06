@@ -54,7 +54,7 @@ namespace ConsoleBot
                 
                 //If the user enters 'quit', the loop breaks out and exits the program.
                 //Otherwise continue with AI manipulation
-                if (input.ToLower() == " quit")
+                if (input.ToLower() == " quit" || input.ToLower() == " exit")
                 {
                     break;
                 }
