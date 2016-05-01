@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+	<pattern>huh</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>wha</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>what *</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>explain *</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>* explain</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>* understand</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>* what</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>I don't know *</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>hmm</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>*?</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>* ?</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>?</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+<category>
+	<pattern>? *</pattern>
+	<template><srai>WHAT</srai></template>
+</category>
+
+</aiml>
+
+
+
+

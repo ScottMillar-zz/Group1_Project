@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+<topic name="name">
+
+	<!--Main NAME category which contains all the reponses the bot could say-->
+	<category>
+		<pattern>NAME</pattern>
+		<template>
+			<random>
+				<li>Hello<get name="username"/> <star/>! Are you ready to begin?<think><set name="topic">BeginTest</set></think></li>
+				<li>Nice to meet you <get name="username"/> <star/>. Are you ready to begin?<think><set name="topic">BeginTest</set></think></li>
+				<li>The mentalist experience is about to begin <get name="username"/> <star/>. Are you ready?<think><set name="topic">BeginTest</set></think></li>
+			</random>
+		</template>
+	</category>
+	
+	<!--<WaysTheyCanEnterName>-->
+	
+		<!--If the user just enters their name, set it so it is stored and then point to the NAME pattern so the bot can generate a response-->
+		<category>
+			<pattern>*</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+	
+		<category>
+			<pattern>My name is *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+	
+		<category>
+			<pattern>* is my name</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+	
+		<category>
+			<pattern>I am *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+	
+        <category>
+			<pattern>Im *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+	
+        <category>
+			<pattern>I'm *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>_ is *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+	
+		<category>
+			<pattern>it's *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>its *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>_ it's *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>_ its *</pattern>
+			<template>
+				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+	<!--</WaysTheyCanEnterName>-->
+
+		
+</topic>
+
+<!--This is the topic selected after the bot has selected a phrase from the NAME pattern-->
+<topic name="BeginTest">
+    <!--Set as the main response for what the user says if they say 'yes'-->
+	<category>
+		<pattern>YES</pattern>
+		<template>
+			Ok, I'm going to ask you to perform a couple of <set name="topic">tasks</set> for me. Do you see a pen and a sheet of paper next to you? 
+		</template>
+	</category>
+	
+    <category>
+        <pattern>Ready</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Lets go</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>I'm ready</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Im ready</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+      
+    <category>
+        <pattern>I am ready</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+      
+    <category>
+        <pattern>Yep</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Ye</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I am</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>sure</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+	<category>
+		<pattern>NO</pattern>
+		<template>
+			Okay, can you tell me why<think><set name="topic">notready</set></think>? 
+		</template>
+	</category>
+	
+	<category>
+        <pattern>nope</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>nah</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
+
+	<category>
+        <pattern>not yet</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>sorry _</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ sorry</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
+	
+</topic>
+
+<topic name="notready">
+    <category>
+        <pattern>*</pattern>
+        <template>
+            That's okay <get name="username"/>! Just let me know when you are ready!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>READY</pattern>
+        <template>
+            Let's begin!<think><set name="topic">tasks</set></think>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Lets go</pattern>
+        <template>
+            <srai>READY</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>I'm ready</pattern>
+        <template>
+            <srai>READY</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Im ready</pattern>
+        <template>
+            <srai>READY</srai>
+        </template>
+    </category>
+      
+    <category>
+        <pattern>I am ready</pattern>
+        <template>
+            <srai>READY</srai>
+        </template>
+    </category>
+      
+    <category>
+        <pattern>Lets go</pattern>
+        <template>
+            <srai>READY</srai>
+        </template>
+    </category>
+       
+</topic>
+
+</aiml>
