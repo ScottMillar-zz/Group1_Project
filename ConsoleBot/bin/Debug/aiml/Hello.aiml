@@ -13,18 +13,9 @@
 	<pattern>HELLO</pattern>
 	<template>
 		<random>
-			<li>Hi there! Could I ask you for your <set name="topic">name</set> please?</li>
-			<li>Hi there! What's your <set name="topic">name</set>?</li>
-			<li>Hi there! Do you have a <set name="topic">name</set>?</li>
-			<li>Hi! Could I ask you for your <set name="topic">name</set> please?</li>
-			<li>Hi! What's your <set name="topic">name</set>?</li>
-			<li>Hi! What <set name="topic">name</set> do people call you?</li>
-			<li>Hello! Could I ask you for your <set name="topic">name</set> please?</li>
-			<li>Hello! What's your <set name="topic">name</set>?</li>
-			<li>Hello! Do you have a <set name="topic">name</set>?</li>
-			<li>Hey! Could I ask you for your <set name="topic">name</set> please?</li>
+			<li>Hi! :) What's your <set name="topic">name</set>?</li>
+			<li>Hi! :D What's your <set name="topic">name</set>?</li>
 			<li>Hey! What's your <set name="topic">name</set>?</li>
-			<li>Hey! Do you have a <set name="topic">name</set>?</li>
 		</random>
 	</template>
 </category>

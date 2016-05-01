@@ -10,7 +10,6 @@
 			<random>
 				<li>Hello <get name="username"/> <star/>! Are you ready to begin?<think><set name="topic">BeginTest</set></think></li>
 				<li>Nice to meet you <get name="username"/> <star/>. Are you ready to begin?<think><set name="topic">BeginTest</set></think></li>
-				<li>Ok <get name="username"/> <star/>, lets begin the testing! Are you ready to begin?<think><set name="topic">BeginTest</set></think></li>
 				<li>The mentalist experience is about to begin <get name="username"/> <star/>. Are you ready?<think><set name="topic">BeginTest</set></think></li>
 			</random>
 		</template>
@@ -106,7 +105,7 @@
 	<category>
 		<pattern>YES</pattern>
 		<template>
-			Ok, I'm going to ask you to perform a few <set name="topic">tasks</set> for me. Do you see a pen and a sheet of paper next to you? 
+			Ok, I'm going to ask you to perform a couple of <set name="topic">tasks</set> for me. Do you see a pen and a sheet of paper next to you? 
 		</template>
 	</category>
 	
