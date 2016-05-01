@@ -73,10 +73,12 @@
 </topic>
 
 <topic name="tasks">
+   
+   <!-- Responses here are in response to Ok, I'm going to ask you to perform a couple of tasks for me. Do you see a pen and a sheet of paper next to you?-->
     <category>
         <pattern>YES</pattern>
         <template>
-            I want you to think of a whole <set name="topic">number</set> between one and ten
+            I want you to 'think' of a whole <set name="topic">number</set> between one and ten, write it down.
         </template>
     </category>
     
@@ -414,7 +416,52 @@
             <srai>YES</srai>
         </template>
     </category>	
+    
+    <category>
+        <pattern>NO</pattern>
+        <template>
+            <random>
+                <li>Really? Did you work it out correctly? <think><set name="topic">WrongNumber</set></think>;)</li>
+                <li>Really? Are you sure you did the maths correctly? <think><set name="topic">WrongNumber</set></think>;)</li>
+                <li>Are you sure?<think><set name="topic">WrongNumber</set></think>;)</li>
+            </random>
+        </template>
+    </category>	
+    
+    <category>
+        <pattern>Can it be done with higher numbers</pattern>
+        <template>
+            Want to give it a go?<think><set name="topic">number</set></think>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Can it be done with higher numbers</pattern>
+        <template>
+            Want to give it a go?<think><set name="topic">number</set></think>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>_ higher numbers</pattern>
+        <template>
+            Want to give it a go?<think><set name="topic">number</set></think>
+        </template>
+    </category>
+</topic>
 
+<topic name="WrongNumber">
+   <!--Responses to 
+       Really? Did you work it out correctly? ;)
+       Really? Are you sure you did the maths correctly? ;)
+       Are you sure? ;)
+    -->
+    <category>
+        <pattern>YES</pattern>
+        <template>
+            It should be correct... let us try again. 'Think' of a number between one and then write it down.<think><set name="topic">ChosenNumber</set></think>
+        </template>
+    </category>
 </topic>
 
 <topic name="MentalClever">

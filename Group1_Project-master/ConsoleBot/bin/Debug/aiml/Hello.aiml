@@ -13,7 +13,7 @@
 	<pattern>HELLO</pattern>
 	<template>
 		<random>
-			<li>Hi again! :) What's your <set name="topic">name</set>?</li>
+			<li>Hi! :) What's your <set name="topic">name</set>?</li>
 			<li>Hi! :D What's your <set name="topic">name</set>?</li>
 			<li>Hey! What's your <set name="topic">name</set>?</li>
 		</random>

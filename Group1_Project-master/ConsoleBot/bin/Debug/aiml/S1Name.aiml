@@ -8,7 +8,7 @@
 		<pattern>NAME</pattern>
 		<template>
 			<random>
-				<li>Hello<get name="username"/> <star/>! Are you ready to begin?<think><set name="topic">BeginTest</set></think></li>
+				<li>Hello <get name="username"/> <star/>! Are you ready to begin?<think><set name="topic">BeginTest</set></think></li>
 				<li>Nice to meet you <get name="username"/> <star/>. Are you ready to begin?<think><set name="topic">BeginTest</set></think></li>
 				<li>The mentalist experience is about to begin <get name="username"/> <star/>. Are you ready?<think><set name="topic">BeginTest</set></think></li>
 			</random>

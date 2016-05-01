@@ -11,11 +11,10 @@ namespace ConsoleBot
 {
     public class Program
     {
-
         static void Main(string[] args)
         {
             string dictionary = File.ReadAllText("Dictionary.txt");
-
+            Console.Title = "The Mentalist";
             //Initializing classes
             Bot myBot = new Bot();
             Spelling spelling = new Spelling(dictionary);
@@ -25,8 +24,6 @@ namespace ConsoleBot
             //Create a new instance of the user interacting with the bot
             User myUser = new User("consoleUser", myBot);
 
-            //False to allow the AIML from files
-            //myBot.isAcceptingUserInput = false;
             //Loads AIML from files
             myBot.loadAIMLFromFiles();
 
@@ -41,9 +38,6 @@ namespace ConsoleBot
             //While the bot is accepting user input
             while (true)
             {
-
-
-                // Console.ForegroundColor = ConsoleColor.Green;
                 Console.Write("\n\nYou: ");
 
                 string userInput = Console.ReadLine();                
@@ -54,7 +48,7 @@ namespace ConsoleBot
                 {
                     input += " " + spelling.Correct(item);
                 }
-                //Console.WriteLine(input);
+                Console.WriteLine(input);
                 string output;
                 
                 //If the user enters 'quit', the loop breaks out and exits the program.
@@ -68,7 +62,6 @@ namespace ConsoleBot
                     Request r = new Request(removePunctuation(input), myUser, myBot);
                     Result res = myBot.Chat(r);
 
-                    //Console.ForegroundColor = ConsoleColor.Red;
                     //Used to pretend that the mentalist is reading the message before showing 'The Mentalist is writing...'
                    // Thread.Sleep(userInput.Length * 350);
                     Console.WriteLine("The Mentalist is writing... ");
@@ -78,7 +71,7 @@ namespace ConsoleBot
 
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
                     clearCurrentConsoleLine();
-                    Console.Write("Mentalist: "); /*Console.ResetColor();*/ Console.Write(res.Output);
+                    Console.Write("Mentalist: "); Console.Write(res.Output);
                 }
             }
         }
