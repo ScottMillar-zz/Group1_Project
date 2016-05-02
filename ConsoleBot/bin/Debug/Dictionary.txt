@@ -13,6 +13,9 @@ dokie
 exit
 fine
 go
+yup
+for
+are
 have
 Hello
 hey

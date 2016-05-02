@@ -234,7 +234,14 @@
     <category>
         <pattern>READY</pattern>
         <template>
-            Let's begin with the number trick.<think><set name="topic">tasks</set></think>
+			Brilliant! I now need you to 'think' of a whole <set name="topic">number</set> between 1 and 10. Make sure you don't tell me!
+        </template>
+    </category>
+	
+	<category>
+        <pattern>YES</pattern>
+        <template>
+			Brilliant! I now need you to 'think' of a whole <set name="topic">number</set> between 1 and 10. Make sure you don't tell me!
         </template>
     </category>
     
