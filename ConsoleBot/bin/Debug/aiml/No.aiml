@@ -64,6 +64,14 @@
 </category>
 
 <category>
+	<pattern>nah *</pattern>
+	<template>
+		<srai>NO</srai>
+	</template>
+</category>
+
+
+<category>
 	<pattern>not yet</pattern>
 	<template>
 		<srai>NO</srai>

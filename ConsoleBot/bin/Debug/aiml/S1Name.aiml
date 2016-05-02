@@ -234,10 +234,18 @@
     <category>
         <pattern>READY</pattern>
         <template>
-            Let's begin!<think><set name="topic">tasks</set></think>
-        </template>
+			Brilliant! I now need you to think of a whole <set name="topic">number</set> between 1 and 10. Once you have your number write it down and do not tell me.        
+		</template>
     </category>
+	
     
+	<category>
+        <pattern>YES</pattern>
+		<template>
+			Brilliant! I now need you to think of a whole <set name="topic">number</set> between 1 and 10. Once you have your number write it down and do not tell me.        
+		</template>
+    </category>
+	
     <category>
         <pattern>Lets go</pattern>
         <template>
