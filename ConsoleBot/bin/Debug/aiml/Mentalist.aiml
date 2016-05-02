@@ -16,7 +16,7 @@
 		<pattern>MENTALIST</pattern>
 		<template>
 		    <random>
-                <li>It means I can read your mind... Probably. ;) Let's play one more game! Using your paper, I would like you to draw something. So, let an image <set name="topic">flow</set> into your mind, then draw it, okay? :D</li>
+                <li>It means that I posses certain skills that allow me to see what you are thinking. I've got another technique I'd like to try. I need you to completely clear your mind of all thoughts. Now let an image <set name="topic">flow</set> though your mind. Keep this image stored in your mind and do not tell anyone what it is! I need you to now channel this image on to the paper given to you earlier</li>
                 <li>It just means I'm a mind reader, basically. ;) Let's play one more game! Using your paper, I would like you to draw something. So, let an image <set name="topic">flow</set> into your mind, then draw it, okay? :)</li>
 	        </random>
 	    </template>
@@ -186,7 +186,7 @@
     <category>
         <pattern>YES</pattern>
         <template>
-            I want you to 'think' of a whole <set name="topic">number</set> between one and ten, but do not tell me.
+			Brilliant! I now need you to think of a whole <set name="topic">number</set> between 1 and 10. Once you have your number write it down and do not tell me.
         </template>
     </category>
     
@@ -318,10 +318,7 @@
 	<category>
 		<pattern>OKAY</pattern>
 		<template>
-			<random>
-				<li>Have you wrote it down?<think><set name="topic">ChosenNumber</set></think></li>
-				<li>Have you written it down?<think><set name="topic">ChosenNumber</set></think></li>
-			</random>
+			Have you written it down?<think><set name="topic">ChosenNumber</set></think>
 		</template>
 	</category>
 	
@@ -334,7 +331,7 @@
 	<category>
 		<pattern>YES</pattern>
 		<template>
-			Great! Multiply your number by 2! :)<think><set name="topic">NumberGameStage2</set></think>
+			Great! Multiply your number by 2!<think><set name="topic">NumberGameStage2</set></think>
 		</template>
 	</category>
 </topic>
@@ -354,7 +351,7 @@
 	<category>
 		<pattern>YES</pattern>
 		<template>
-			Remember your first number? Divide your new number by that ;) <think><set name="topic">NumberGameStage4</set></think>
+			Now divide your new number by your original number<think><set name="topic">NumberGameStage4</set></think>
 		</template>
 	</category>
 </topic>
@@ -364,7 +361,7 @@
 	<category>
 		<pattern>YES</pattern>
 		<template>
-			Now subtract 7 from your new number!<think><set name="topic">NumberGameStage5</set></think>
+			Now subtract 7 from your new number<think><set name="topic">NumberGameStage5</set></think>
 		</template>
 	</category>
 </topic>
@@ -374,7 +371,7 @@
 	<category>
 		<pattern>YES</pattern>
 		<template>
-			Okay... the number you should have is 3! Am I correct? ;)<think><set name="topic">NumberGameStage6</set></think>
+			Your mind is hard to read, but I think your number is 3! Am I correct?<think><set name="topic">NumberGameStage6</set></think>
 		</template>
 	</category>
 	
@@ -420,10 +417,7 @@
 	<category>
 		<pattern>YES</pattern>
 		<template>
-			<random>
-				<li>I am clever aren't I?<think><set name="topic">MentalClever</set></think></li>
-				<li>Good trick isn't it?<think><set name="topic">MentalClever</set></think></li>
-			</random>
+			It is a good trick don't you think?<think><set name="topic">MentalClever</set></think>
 		</template>
 	</category>
 	
@@ -606,7 +600,7 @@
         <pattern>NO</pattern>
         <template>
             <random>
-                <li>Really? Did you work it out correctly? <think><set name="topic">WrongNumber</set></think></li>
+                <li>Really? I was sure I had it! Did you work it out correctly? <think><set name="topic">WrongNumber</set></think></li>
                 <li>Really? Are you sure you did the maths correctly? <think><set name="topic">WrongNumber</set></think></li>
                 <li>Are you sure?<think><set name="topic">WrongNumber</set></think>;)</li>
             </random>
@@ -644,7 +638,7 @@
     <category>
         <pattern>YES</pattern>
         <template>
-            It should be correct... let us try again. 'Think' of a number between one and then write it down.<think><set name="topic">ChosenNumber</set></think>
+            It should be correct... let's try again. Think of a new number between 1 and 10 then write it down.<think><set name="topic">ChosenNumber</set></think>
         </template>
     </category>
 </topic>
@@ -844,8 +838,8 @@
         <pattern>YES</pattern>
         <template>
             <random>
-                <li>Please could you ask a collegue of mine to get you some, I apologise about this!</li>
-				<li>I'm very sorry! Could you please ask a collegue of mine to get you some?</li>
+                <li>Please could you ask a collegue of mine to get you some, I apologise about this!<think><set name="topic">tasks</set></think></li>
+				<li>I'm very sorry! Could you please ask a collegue of mine to get you some?<think><set name="topic">tasks</set></think></li>
             </random>
         </template>
     </category>
@@ -858,8 +852,8 @@
         <pattern>OK</pattern>
         <template>
             <random>
-                <li>Coolies! Just give me a bell when you've finished drawing <get name="username"/><think><set name="topic">DrawFinished</set></think></li>
-                <li>Coolies! Just give me a message when you've finished drawing <get name="username"/><think><set name="topic">DrawFinished</set></think></li>
+                <li>Awesome! Just give me a bell when you've finished drawing <get name="username"/><think><set name="topic">DrawFinished</set></think></li>
+                <li>Awesome! Just give me a message when you've finished drawing <get name="username"/><think><set name="topic">DrawFinished</set></think></li>
             </random>    
         </template>
     </category>
@@ -964,7 +958,7 @@
         <pattern>FINISHED</pattern>
         <template>
             <random>
-                <li>Is it anything to do with water?<think><set name="topic">WaterDrawing</set></think></li>
+                <li>I'm getting something! Is it anything to do with water?<think><set name="topic">WaterDrawing</set></think></li>
             </random>
         </template>
     </category>
@@ -1109,8 +1103,8 @@
         <pattern>NO</pattern>
         <template>
             <random>
-                <li>Well at least I tried haha! :( Thanks for the conversation <get name="username"/>! I will come back to you now :)</li>
-                <li>Well... one out of two isn't too bad is it? It was a pleasure talking with you <get name="username"/>! I'll come back to you now :)</li>
+                <li>Damn! It worked the last time I did it! Well at least I tried! :( Thanks for the conversation <get name="username"/>! I will come back to you now :)</li>
+                <li>I was sure I had it! Well... one out of two isn't too bad is it? It was a pleasure talking with you <get name="username"/>! I'll come back to you now :)</li>
                 <li>Damn! Oh well, at least I tried, and I got one out of two! Thanks for the chat <get name="username"/>, I'll come back to chat with you face to face :)</li>
             </random>
         </template>
