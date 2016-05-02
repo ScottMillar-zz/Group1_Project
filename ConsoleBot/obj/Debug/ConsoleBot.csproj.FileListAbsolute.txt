@@ -60,3 +60,10 @@ C:\Users\Computing\Desktop\Group Project\ConsoleBot\obj\Debug\ConsoleBot.csprojR
 \\Mac\Home\Downloads\Group1_Project-master-2\Group1_Project-master\ConsoleBot\bin\Debug\TheMentalist.pdb
 \\Mac\Home\Downloads\Group1_Project-master-2\Group1_Project-master\ConsoleBot\obj\Debug\TheMentalist.exe
 \\Mac\Home\Downloads\Group1_Project-master-2\Group1_Project-master\ConsoleBot\obj\Debug\TheMentalist.pdb
+C:\Users\Computing\Downloads\Group1_Project-master\Group1_Project-master\ConsoleBot\bin\Debug\TheMentalist.exe.config
+C:\Users\Computing\Downloads\Group1_Project-master\Group1_Project-master\ConsoleBot\obj\Debug\TheMentalist.exe
+C:\Users\Computing\Downloads\Group1_Project-master\Group1_Project-master\ConsoleBot\obj\Debug\TheMentalist.pdb
+C:\Users\Computing\Downloads\Group1_Project-master\Group1_Project-master\ConsoleBot\bin\Debug\TheMentalist.exe
+C:\Users\Computing\Downloads\Group1_Project-master\Group1_Project-master\ConsoleBot\bin\Debug\TheMentalist.pdb
+C:\Users\Computing\Downloads\Group1_Project-master\Group1_Project-master\ConsoleBot\bin\Debug\AIMLbot.pdb
+C:\Users\Computing\Downloads\Group1_Project-master\Group1_Project-master\ConsoleBot\obj\Debug\ConsoleBot.csprojResolveAssemblyReference.cache

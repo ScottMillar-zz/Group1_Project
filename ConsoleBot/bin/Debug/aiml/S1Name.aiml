@@ -33,7 +33,7 @@
 		</category>
 	
 		<category>
-			<pattern>* is my name</pattern>
+			<pattern>_ is my name</pattern>
 			<template>
 				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
 			</template>
@@ -61,11 +61,18 @@
 		</category>
 		
 		<category>
-			<pattern>_ is *</pattern>
+			<pattern>_ is * _</pattern>
 			<template>
-				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+				<think><set name="username"> <star index="2"/> </set></think><srai>NAME</srai>
 			</template>
 		</category>
+	
+		<!--<category>
+			<pattern>_ is * _</pattern>
+			<template>
+				<think><set name="username"> <star index="1"/> </set></think><srai>NAME</srai>
+			</template>
+		</category>-->
 	
 		<category>
 			<pattern>it's *</pattern>

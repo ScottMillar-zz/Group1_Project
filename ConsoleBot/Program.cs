@@ -13,16 +13,29 @@ namespace ConsoleBot
     {
         static void Main(string[] args)
         {
+            //Set the console size and height
+            Console.SetWindowSize(300, 65);
+
+            //Read the dictionary into the program
             string dictionary = File.ReadAllText("Dictionary.txt");
+
+            //Change the title of the console window
             Console.Title = "The Mentalist";
+
             //Initializing classes
             Bot myBot = new Bot();
+
+            //Declare new class
             Spelling spelling = new Spelling(dictionary);
 
             //Load settings for the bot
             myBot.loadSettings();
+
             //Create a new instance of the user interacting with the bot
             User myUser = new User("consoleUser", myBot);
+
+            //Declare new random object
+            Random rand = new Random();
 
             //Loads AIML from files
             myBot.loadAIMLFromFiles();
@@ -31,7 +44,6 @@ namespace ConsoleBot
             myBot.isAcceptingUserInput = true;
 
             //Asthetic apperance for the console
-            Console.BackgroundColor = ConsoleColor.DarkGreen;
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Clear();
 
@@ -40,16 +52,17 @@ namespace ConsoleBot
             {
                 Console.Write("\n\nYou: ");
 
-                string userInput = Console.ReadLine();                
+                string userInput = Console.ReadLine();
                 string input = "";
+                //string input = userInput;
 
-                //checking the spelling of the userInput
-                foreach (string item in userInput.Split(' '))
-                {
-                    input += " " + spelling.Correct(item);
-                }
-                Console.WriteLine(input);
-                string output;
+               //checking the spelling of the userInput
+               foreach (string item in userInput.Split(' '))
+               {
+                  input += " " + spelling.Correct(item);
+               }
+               Console.WriteLine(input);
+               string output;
                 
                 //If the user enters 'quit', the loop breaks out and exits the program.
                 //Otherwise continue with AI manipulation
@@ -63,11 +76,11 @@ namespace ConsoleBot
                     Result res = myBot.Chat(r);
 
                     //Used to pretend that the mentalist is reading the message before showing 'The Mentalist is writing...'
-                   // Thread.Sleep(userInput.Length * 350);
+                    Thread.Sleep(userInput.Length * rand.Next(150, 300));
                     Console.WriteLine("The Mentalist is writing... ");
 
                     output = res.Output;
-                   // Thread.Sleep(output.Length * 125);
+                    Thread.Sleep(output.Length * rand.Next(80, 150));
 
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
                     clearCurrentConsoleLine();

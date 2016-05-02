@@ -11,7 +11,7 @@
 <!---at critical points in each section, a new topic tag is assigned, moving the conversation along.-->
 
 <topic name="mentalist">
-<!--That's because I am a <set name="topic">mentalist</set>! Hehe! :D-->
+<!--That's because I am a <set name="topic">mentalist</set>!-->
 	<category>
 		<pattern>MENTALIST</pattern>
 		<template>
@@ -21,9 +21,26 @@
 	        </random>
 	    </template>
     </category>
+	
+	<category>
+		<pattern>GAME2</pattern>
+		<template>
+		    <random>
+                <li>Let's play one more game! Using your paper, I would like you to draw something. So, let an image <set name="topic">flow</set> into your mind, then draw it, okay? :D</li>
+                <li>Let us play one more game! Using your paper, I would like you to draw something. So, let an image <set name="topic">flow</set> into your mind, then draw it, okay? :)</li>
+	        </random>
+	    </template>
+    </category>
     
     <category>
         <pattern>What is one of them?</pattern>
+        <template>
+            <srai>MENTALIST</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>A _</pattern>
         <template>
             <srai>MENTALIST</srai>
         </template>
@@ -70,6 +87,97 @@
             <srai>MENTALIST</srai>
         </template>
     </category>
+	
+	<category>
+        <pattern>Cool</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
+	
+    <category>
+        <pattern>_ cool</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ cool *</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>cool _</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Nice</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ Nice</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Nice _</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ Nice *</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ Nice *</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
+	
+		<category>
+        <pattern>_ Nice *</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
+	
+		<category>
+        <pattern>_ Nice *</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
+	
+		<category>
+        <pattern>_ Nice *</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
+	
+		<category>
+        <pattern>_ Nice *</pattern>
+        <template>
+            <srai>GAME2</srai>
+        </template>
+    </category>
 </topic>
 
 <topic name="tasks">
@@ -78,7 +186,7 @@
     <category>
         <pattern>YES</pattern>
         <template>
-            I want you to 'think' of a whole <set name="topic">number</set> between one and ten, write it down.
+            I want you to 'think' of a whole <set name="topic">number</set> between one and ten, but do not tell me.
         </template>
     </category>
     
@@ -211,8 +319,8 @@
 		<pattern>OKAY</pattern>
 		<template>
 			<random>
-				<li>You thought of a number?<think><set name="topic">ChosenNumber</set></think></li>
-				<li>Have you thought of a number?<think><set name="topic">ChosenNumber</set></think></li>
+				<li>Have you wrote it down?<think><set name="topic">ChosenNumber</set></think></li>
+				<li>Have you written it down?<think><set name="topic">ChosenNumber</set></think></li>
 			</random>
 		</template>
 	</category>
@@ -269,6 +377,41 @@
 			Okay... the number you should have is 3! Am I correct? ;)<think><set name="topic">NumberGameStage6</set></think>
 		</template>
 	</category>
+	
+	<category>
+		<pattern>Completed</pattern>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Subtracted</pattern>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>_ Subtracted</pattern>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
+		
+	<category>
+		<pattern>Subtracted _</pattern>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>_ Subtracted *</pattern>
+		<template>
+			<srai>YES</srai>
+		</template>
+	</category>
 </topic>
 
 <topic name="NumberGameStage6">
@@ -278,8 +421,8 @@
 		<pattern>YES</pattern>
 		<template>
 			<random>
-				<li>I am clever aren't I? ;)<think><set name="topic">MentalClever</set></think></li>
-				<li>Good trick isn't it? :)<think><set name="topic">MentalClever</set></think></li>
+				<li>I am clever aren't I?<think><set name="topic">MentalClever</set></think></li>
+				<li>Good trick isn't it?<think><set name="topic">MentalClever</set></think></li>
 			</random>
 		</template>
 	</category>
@@ -340,56 +483,56 @@
         </template>
     </category>
 
-<category>
+	<category>
         <pattern>How did you do that</pattern>
         <template>
             <srai>YES</srai>
         </template>
     </category>
 
-<category>
+	<category>
         <pattern>_ Yeah</pattern>
         <template>
             <srai>YES</srai>
         </template>
     </category>
 
-<category>
+	<category>
         <pattern>Yeah _</pattern>
         <template>
             <srai>YES</srai>
         </template>
     </category>
 
-<category>
+	<category>
         <pattern>_ Yeah *</pattern>
         <template>
             <srai>YES</srai>
         </template>
     </category>
 
-<category>
+	<category>
         <pattern>Cool</pattern>
         <template>
             <srai>YES</srai>
         </template>
     </category>
 
-<category>
+	<category>
         <pattern>_ Cool</pattern>
         <template>
             <srai>YES</srai>
         </template>
     </category>
 
-<category>
+	<category>
         <pattern>Cool _</pattern>
         <template>
             <srai>YES</srai>
         </template>
     </category>
 
-<category>
+	<category>
         <pattern>_ Cool *</pattern>
         <template>
             <srai>YES</srai>
@@ -415,14 +558,56 @@
         <template>
             <srai>YES</srai>
         </template>
+    </category>
+	
+	<category>
+        <pattern>You are yes</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>You are yeah</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>	
+	
+	<category>
+        <pattern>You are</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>	
+	
+	<category>
+        <pattern>You are indeed</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>	
+	
+	<category>
+        <pattern>Affirmative</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>	
+	
+	<category>
+        <pattern>Roger</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
     </category>	
     
     <category>
         <pattern>NO</pattern>
         <template>
             <random>
-                <li>Really? Did you work it out correctly? <think><set name="topic">WrongNumber</set></think>;)</li>
-                <li>Really? Are you sure you did the maths correctly? <think><set name="topic">WrongNumber</set></think>;)</li>
+                <li>Really? Did you work it out correctly? <think><set name="topic">WrongNumber</set></think></li>
+                <li>Really? Are you sure you did the maths correctly? <think><set name="topic">WrongNumber</set></think></li>
                 <li>Are you sure?<think><set name="topic">WrongNumber</set></think>;)</li>
             </random>
         </template>
@@ -465,11 +650,22 @@
 </topic>
 
 <topic name="MentalClever">
-	<!--When the user has thought of a number this is there possible responses-->	
+	<!--I am clever aren't I?
+		Good trick isn't it?-->
 	<category>
 		<pattern>YES</pattern>
 		<template>
-			That's because I am a <set name="topic">mentalist</set>! Hehe! :D
+			<random>
+				<li>That's because I am a <set name="topic">mentalist</set>!</li>
+				<li>Thanks! Let's play another game. Using your piece of paper, I would like you to draw something. So, let an image <set name="topic">flow</set> into your mind, then draw it, okay? :D</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>NO</pattern>
+		<template>
+			I'm sorry that you think that way <get name="username"/>... hopefully you find the next trick better. Using your piece of paper, I would like you to draw something. So, let an image <set name="topic">flow</set> into your mind, then draw it, okay?
 		</template>
 	</category>
 	
@@ -600,6 +796,41 @@
     </category>
     
     <category>
+        <pattern>Good that is</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>It's a really good _</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Good _</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>it is not _</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Good that is</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
         <pattern>Good that is</pattern>
         <template>
             <srai>YES</srai>
