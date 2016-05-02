@@ -1,3 +1,0 @@
-/Users/Kieran/Library/Mobile Documents/com~apple~CloudDocs/ConsoleBot/ConsoleBot/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
-/Users/Kieran/Library/Mobile Documents/com~apple~CloudDocs/ConsoleBot/ConsoleBot/obj/Debug/ConsoleBot.exe
-/Users/Kieran/Library/Mobile Documents/com~apple~CloudDocs/ConsoleBot/ConsoleBot/bin/Debug/AIMLbot.dll
