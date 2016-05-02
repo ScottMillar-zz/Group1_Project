@@ -25,6 +25,8 @@ indeed
 is
 it
 it's
+but
+yes
 its
 let's
 lets 
@@ -56,7 +58,6 @@ yet
 yo
 would
 quit
-
 Sophia
 Emma
 Olivia

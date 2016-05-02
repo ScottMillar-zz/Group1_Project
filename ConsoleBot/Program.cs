@@ -14,7 +14,7 @@ namespace ConsoleBot
         static void Main(string[] args)
         {
             //Set the console size and height
-            Console.SetWindowSize(300, 65);
+            Console.SetWindowSize(300, 80);
 
             //Read the dictionary into the program
             string dictionary = File.ReadAllText("Dictionary.txt");

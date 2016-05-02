@@ -227,14 +227,14 @@
     <category>
         <pattern>*</pattern>
         <template>
-            That's okay <get name="username"/>! Just let me know when you are ready!
+            That's okay <get name="username"/>! Just let me know when you are ready, and make sure you have a pen and paper!
         </template>
     </category>
     
     <category>
         <pattern>READY</pattern>
         <template>
-            Let's begin!<think><set name="topic">tasks</set></think>
+            Let's begin with the number trick.<think><set name="topic">tasks</set></think>
         </template>
     </category>
     

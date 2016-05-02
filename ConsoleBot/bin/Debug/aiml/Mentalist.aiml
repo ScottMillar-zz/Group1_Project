@@ -186,7 +186,7 @@
     <category>
         <pattern>YES</pattern>
         <template>
-			Brilliant! I now need you to think of a whole <set name="topic">number</set> between 1 and 10. Once you have your number write it down and do not tell me.
+			Brilliant! I now need you to 'think' of a whole <set name="topic">number</set> between 1 and 10. Make sure you don't tell me!
         </template>
     </category>
     
@@ -334,6 +334,22 @@
 			Great! Multiply your number by 2!<think><set name="topic">NumberGameStage2</set></think>
 		</template>
 	</category>
+	
+	<category>
+        <pattern>NO</pattern>
+        <template>
+             It is important that you do, so make sure you do it! Let me know when you have done so<think><set name="topic">HasWrittenItDown</set></think>.
+        </template>
+    </category>
+</topic>
+
+<topic name="HasWrittenItDown">
+	<category>
+        <pattern>Done</pattern>
+        <template>
+             Good! Let's get back on with the trick<think><set name="topic">ChosenNumber</set></think>. 
+        </template>
+    </category>
 </topic>
 
 <topic name="NumberGameStage2">
@@ -641,6 +657,42 @@
             It should be correct... let's try again. Think of a new number between 1 and 10 then write it down.<think><set name="topic">ChosenNumber</set></think>
         </template>
     </category>
+	
+	<category>
+        <pattern>I think so</pattern>
+        <template>
+             <srai>YES</srai> 
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I think _</pattern>
+        <template>
+             <srai>YES</srai> 
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ I think *</pattern>
+        <template>
+             <srai>YES</srai> 
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ I think</pattern>
+        <template>
+             <srai>YES</srai> 
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Erm _</pattern>
+        <template>
+             <srai>YES</srai> 
+        </template>
+    </category>
+	
 </topic>
 
 <topic name="MentalClever">
@@ -887,7 +939,7 @@
     </category>
     
     <category>
-        <pattern>Okay _</pattern>
+        <pattern>Okay _</pattern>                                       
         <template>
             <srai>OK</srai>
         </template>
@@ -1163,8 +1215,8 @@
         <pattern>YES</pattern>
         <template>
             <random>
-                <li>Woo! Two out of two eh? ;) Anyway, it was a pleasure talking with you <get name="username"/>! I'll come back to you now and close this conversation :)</li>
-                <li>Yes! Two out of two eh? ;) Anyway, it was great talking with you <get name="username"/>! I'll come back to you now and close this conversation :)</li>
+                <li>Awesome! Two out of two eh? ;) Anyway, it was a pleasure talking with you <get name="username"/>. I'll come back to you now :)</li>
+                <li>Awesome! Two out of two eh? ;) Anyway, it was great talking with you <get name="username"/>. I'll come back to you now :)</li>
             </random>
         </template>
     </category>
