@@ -387,7 +387,7 @@
 	<category>
 		<pattern>YES</pattern>
 		<template>
-			Your mind is hard to read, but I think your number is 3! Am I correct?<think><set name="topic">NumberGameStage6</set></think>
+			Your mind is hard to read, but I think your new number is 3! Am I correct?<think><set name="topic">NumberGameStage6</set></think>
 		</template>
 	</category>
 	

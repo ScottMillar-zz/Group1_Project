@@ -77,7 +77,7 @@ namespace ConsoleBot
                {
                   input += " " + spelling.Correct(item);
                }
-               //Console.WriteLine(input);
+               Console.WriteLine(input);
                string output;
                 
                 //If the user enters 'quit', the loop breaks out and exits the program.
@@ -92,11 +92,11 @@ namespace ConsoleBot
                     Result res = myBot.Chat(r);
 
                     //Used to pretend that the mentalist is reading the message before showing 'The Mentalist is writing...'
-                    Thread.Sleep(userInput.Length * rand.Next(150, 300));
+                   // Thread.Sleep(userInput.Length * rand.Next(150, 300));
                     Console.WriteLine("The Mentalist is writing... ");
 
                     output = res.Output;
-                    Thread.Sleep(output.Length * rand.Next(80, 150));
+                   // Thread.Sleep(output.Length * rand.Next(80, 150));
 
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
                     clearCurrentConsoleLine();

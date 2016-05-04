@@ -8,6 +8,7 @@ correct
 decent
 do
 Done
+one
 dokey
 dokie
 exit
@@ -15,6 +16,8 @@ fine
 go
 yup
 for
+boy
+girl
 are
 have
 Hello
@@ -22,6 +25,7 @@ hey
 hi
 howdy
 I
+mhm
 meh
 was
 Im

@@ -15,6 +15,13 @@
 		</template>
 	</category>
 	
+	<category>
+		<pattern>NONAME</pattern>
+		<template>
+			That's okay, what would you like to be called?<think><set name="topic">name</set></think>
+		</template>
+	</category>
+	
 	<!--<WaysTheyCanEnterName>-->
 	
 		<!--If the user just enters their name, set it so it is stored and then point to the NAME pattern so the bot can generate a response-->
@@ -29,6 +36,20 @@
 			<pattern>My name is *</pattern>
 			<template>
 				<think><set name="username"> <star/> </set></think><srai>NAME</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>I do not have a name</pattern>
+			<template>
+				<srai>NONAME</srai>
+			</template>
+		</category>
+		
+		<category>
+			<pattern>I dont have a name</pattern>
+			<template>
+				<srai>NONAME</srai>
 			</template>
 		</category>
 	
@@ -66,13 +87,6 @@
 				<think><set name="username"> <star index="2"/> </set></think><srai>NAME</srai>
 			</template>
 		</category>
-	
-		<!--<category>
-			<pattern>_ is * _</pattern>
-			<template>
-				<think><set name="username"> <star index="1"/> </set></think><srai>NAME</srai>
-			</template>
-		</category>-->
 	
 		<category>
 			<pattern>it's *</pattern>
@@ -115,69 +129,6 @@
 			Ok, I'm going to ask you to perform a couple of <set name="topic">tasks</set> for me. Do you see a pen and a sheet of paper next to you? 
 		</template>
 	</category>
-	
-    <category>
-        <pattern>Ready</pattern>
-        <template>
-            <srai>YES</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>Lets go</pattern>
-        <template>
-            <srai>YES</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>I'm ready</pattern>
-        <template>
-            <srai>YES</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>Im ready</pattern>
-        <template>
-            <srai>YES</srai>
-        </template>
-    </category>
-      
-    <category>
-        <pattern>I am ready</pattern>
-        <template>
-            <srai>YES</srai>
-        </template>
-    </category>
-      
-    <category>
-        <pattern>Yep</pattern>
-        <template>
-            <srai>YES</srai>
-        </template>
-    </category>
-    
-    <category>
-        <pattern>Ye</pattern>
-        <template>
-            <srai>YES</srai>
-        </template>
-    </category>
-	
-	<category>
-        <pattern>I am</pattern>
-        <template>
-            <srai>YES</srai>
-        </template>
-    </category>
-	
-	<category>
-        <pattern>sure</pattern>
-        <template>
-            <srai>YES</srai>
-        </template>
-    </category>
     
 	<category>
 		<pattern>NO</pattern>
@@ -185,41 +136,6 @@
 			Okay, can you tell me why<think><set name="topic">notready</set></think>? 
 		</template>
 	</category>
-	
-	<category>
-        <pattern>nope</pattern>
-        <template>
-            <srai>NO</srai>
-        </template>
-    </category>
-	
-	<category>
-        <pattern>nah</pattern>
-        <template>
-            <srai>NO</srai>
-        </template>
-    </category>
-
-	<category>
-        <pattern>not yet</pattern>
-        <template>
-            <srai>NO</srai>
-        </template>
-    </category>
-	
-	<category>
-        <pattern>sorry _</pattern>
-        <template>
-            <srai>NO</srai>
-        </template>
-    </category>
-	
-	<category>
-        <pattern>_ sorry</pattern>
-        <template>
-            <srai>NO</srai>
-        </template>
-    </category>
 	
 </topic>
 
@@ -275,6 +191,20 @@
       
     <category>
         <pattern>Lets go</pattern>
+        <template>
+            <srai>READY</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Okay I'm ready</pattern>
+        <template>
+            <srai>READY</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>Okay I am ready</pattern>
         <template>
             <srai>READY</srai>
         </template>

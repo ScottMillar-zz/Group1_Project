@@ -257,4 +257,71 @@
         <srai>YES</srai>
     </template>
 </category>
+
+<!--These respones are for the 'YES' <pattern> in the S1Name.aiml file at the topic "BeginTest"-->
+
+	<category>
+        <pattern>Ready</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Lets go</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>I'm ready</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Im ready</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+      
+    <category>
+        <pattern>I am ready</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+      
+    <category>
+        <pattern>Yep</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>Ye</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>I am</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>sure</pattern>
+        <template>
+            <srai>YES</srai>
+        </template>
+    </category>
+	
+<!--End of respones from the 'YES' <pattern> in the S1Name.aiml file at the topic "BeginTest"-->
 </aiml>

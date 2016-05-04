@@ -84,3 +84,7 @@ X:\Group1_Project-master\ConsoleBot\obj\Debug\ConsoleBot.csprojResolveAssemblyRe
 E:\Group1_Project-master\ConsoleBot\bin\Debug\TheMentalist.exe.config
 E:\Group1_Project-master\ConsoleBot\obj\Debug\TheMentalist.exe
 E:\Group1_Project-master\ConsoleBot\obj\Debug\TheMentalist.pdb
+E:\Group1_Project-master\ConsoleBot\bin\Debug\TheMentalist.exe
+E:\Group1_Project-master\ConsoleBot\bin\Debug\TheMentalist.pdb
+E:\Group1_Project-master\ConsoleBot\bin\Debug\AIMLbot.pdb
+E:\Group1_Project-master\ConsoleBot\obj\Debug\ConsoleBot.csprojResolveAssemblyReference.cache

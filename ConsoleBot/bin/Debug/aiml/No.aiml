@@ -3,50 +3,66 @@
 
 <category>
 	<pattern>nope</pattern>
-	<template><srai>NO</srai></template>
+	<template>
+		<srai>NO</srai>
+	</template>
 </category>
 
 <category>
 	<pattern>* haven't</pattern>
-	<template><srai>NO</srai></template>
+	<template>
+		<srai>NO</srai>
+	</template>
 </category>
 
 
 <category>
 	<pattern>* have not</pattern>
-	<template><srai>NO</srai></template>
+	<template>
+		<srai>NO</srai>
+	</template>
 </category>
-
 
 <category>
 	<pattern>uh...</pattern>
-	<template><srai>NO</srai></template>
+	<template>
+		<srai>NO</srai>
+	</template>
 </category>
-
 
 <category>
 	<pattern>iie</pattern>
-	<template><srai>NO</srai></template>
+	<template>
+		<srai>NO</srai>
+	</template>
 </category>
 
 <category>
 	<pattern>negative</pattern>
-	<template><srai>NO</srai></template>
+	<template>
+		<srai>NO</srai>
+	</template>
 </category>
 
 <category>
 	<pattern>negatory</pattern>
-	<template><srai>NO</srai></template>
+	<template>
+		<srai>NO</srai>
+	</template>
 </category>
 
 <category>
 	<pattern>* no</pattern>
-	<template><srai>NO</srai></template>
+	<template>
+		<srai>NO</srai>
+	</template>
 </category>
 
 <category>
 	<pattern>no *</pattern>
-	<template><srai>NO</srai></template>
+	<template>
+		<srai>NO</srai>
+	</template>
 </category>
 
 <category>
@@ -127,13 +143,49 @@
 	</template>
 </category>
 
-	
-	<category>
-        <pattern>meh</pattern>
+<category>
+    <pattern>meh</pattern>
+    <template>
+        <srai>NO</srai>
+    </template>
+</category>
+
+<!--These respones are for the 'NO' <pattern> in the S1Name.aiml file at the topic "BeginTest"-->
+<category>
+        <pattern>nope</pattern>
         <template>
             <srai>NO</srai>
         </template>
     </category>
+	
+	<category>
+        <pattern>nah</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
+
+	<category>
+        <pattern>not yet</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>sorry _</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
+	
+	<category>
+        <pattern>_ sorry</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>	
+<!--End of respones are for the 'NO' <pattern> in the S1Name.aiml file at the topic "BeginTest"-->
     
 
 

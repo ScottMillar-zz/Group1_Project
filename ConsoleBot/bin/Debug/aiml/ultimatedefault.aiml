@@ -6,7 +6,7 @@
 	<template>
 		<random>
 			<li>I'm sorry, I didn't quite catch that, can you say it again please?</li>
-			<li>Tester</li>
+			<li>Could you say it again please?</li>
 		</random>
 	</template>
 </category>
