@@ -74,3 +74,13 @@ C:\Users\Computing\Documents\GitHub\Group1_Project\ConsoleBot\bin\Debug\TheMenta
 C:\Users\Computing\Documents\GitHub\Group1_Project\ConsoleBot\bin\Debug\TheMentalist.pdb
 C:\Users\Computing\Documents\GitHub\Group1_Project\ConsoleBot\bin\Debug\AIMLbot.pdb
 C:\Users\Computing\Documents\GitHub\Group1_Project\ConsoleBot\obj\Debug\ConsoleBot.csprojResolveAssemblyReference.cache
+X:\Group1_Project-master\ConsoleBot\bin\Debug\TheMentalist.exe.config
+X:\Group1_Project-master\ConsoleBot\obj\Debug\TheMentalist.exe
+X:\Group1_Project-master\ConsoleBot\obj\Debug\TheMentalist.pdb
+X:\Group1_Project-master\ConsoleBot\bin\Debug\TheMentalist.exe
+X:\Group1_Project-master\ConsoleBot\bin\Debug\TheMentalist.pdb
+X:\Group1_Project-master\ConsoleBot\bin\Debug\AIMLbot.pdb
+X:\Group1_Project-master\ConsoleBot\obj\Debug\ConsoleBot.csprojResolveAssemblyReference.cache
+E:\Group1_Project-master\ConsoleBot\bin\Debug\TheMentalist.exe.config
+E:\Group1_Project-master\ConsoleBot\obj\Debug\TheMentalist.exe
+E:\Group1_Project-master\ConsoleBot\obj\Debug\TheMentalist.pdb

@@ -9,13 +9,9 @@
 			<li>Bye <get name="username"/>!</li>
 			<li>Farewell <get name="username"/>!</li>
 			<li>Bye bye<get name="username"/>!</li>
-			<li>Later <get name="username"/>!</li>
 			<li>So long <get name="username"/>!</li>
 			<li>Take care <get name="username"/>!</li>
-			<li>All right then <get name="username"/>!</li>
-			<li>Catch you later <get name="username"/>!</li>
 			<li>Have a good day<get name="username"/>!</li>
-			<li>Ciao <get name="username"/>!</li>
 			<li>Au revoir <get name="username"/>!</li>
 		</random>
 	</template>

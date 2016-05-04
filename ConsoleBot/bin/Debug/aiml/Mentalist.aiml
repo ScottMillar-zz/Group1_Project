@@ -863,7 +863,7 @@
     </category>
 	
 	<category>
-        <pattern>it is not _</pattern>
+        <pattern>it was okay _</pattern>
         <template>
             <srai>YES</srai>
         </template>
@@ -877,7 +877,7 @@
     </category>
 	
 	<category>
-        <pattern>Good that is</pattern>
+        <pattern>Alright_</pattern>
         <template>
             <srai>YES</srai>
         </template>

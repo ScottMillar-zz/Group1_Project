@@ -14,7 +14,6 @@ namespace ConsoleBot
         static void Main(string[] args)
         {
             //Set the console size and height
-            Console.SetWindowSize(300, 80);
 
             //Read the dictionary into the program
             string dictionary = File.ReadAllText("Dictionary.txt");
@@ -37,6 +36,10 @@ namespace ConsoleBot
             //Declare new random object
             Random rand = new Random();
 
+            //Random hello = new Random();
+
+            //string[] helloResponses = new string[] { "Hello", "Hello there", "Hi there", "Hi" };
+
             //Loads AIML from files
             myBot.loadAIMLFromFiles();
 
@@ -47,7 +50,20 @@ namespace ConsoleBot
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Clear();
 
+           // Console.ReadLine();
+            //Used to pretend that the mentalist is reading the message before showing 'The Mentalist is writing...'
+           // Thread.Sleep(helloResponses.Length * rand.Next(150, 300));
+           // Console.WriteLine("The Mentalist is writing... ");
+
+
+            //Thread.Sleep(helloResponses.Length * rand.Next(80, 150));
+
+           // Console.SetCursorPosition(0, Console.CursorTop - 1);
+            //clearCurrentConsoleLine();
+            //Console.Write("Mentalist: "); Console.Write(helloResponses[hello.Next(3)]);
+
             //While the bot is accepting user input
+
             while (true)
             {
                 Console.Write("\n\nYou: ");
@@ -61,7 +77,7 @@ namespace ConsoleBot
                {
                   input += " " + spelling.Correct(item);
                }
-               Console.WriteLine(input);
+               //Console.WriteLine(input);
                string output;
                 
                 //If the user enters 'quit', the loop breaks out and exits the program.
@@ -76,11 +92,11 @@ namespace ConsoleBot
                     Result res = myBot.Chat(r);
 
                     //Used to pretend that the mentalist is reading the message before showing 'The Mentalist is writing...'
-                    //Thread.Sleep(userInput.Length * rand.Next(150, 300));
+                    Thread.Sleep(userInput.Length * rand.Next(150, 300));
                     Console.WriteLine("The Mentalist is writing... ");
 
                     output = res.Output;
-                    //Thread.Sleep(output.Length * rand.Next(80, 150));
+                    Thread.Sleep(output.Length * rand.Next(80, 150));
 
                     Console.SetCursorPosition(0, Console.CursorTop - 1);
                     clearCurrentConsoleLine();

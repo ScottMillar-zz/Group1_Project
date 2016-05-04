@@ -126,6 +126,14 @@
 		<srai>NO</srai>
 	</template>
 </category>
+
+	
+	<category>
+        <pattern>meh</pattern>
+        <template>
+            <srai>NO</srai>
+        </template>
+    </category>
     
 
 
